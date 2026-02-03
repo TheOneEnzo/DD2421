@@ -31,6 +31,7 @@ class MyPainting(QWidget):
     def paintEvent(self, ev):
         p = QtGui.QPainter()
         p.begin(self)
+        p.fillRect(self.rect(), QtGui.QColor(255, 255, 255))
         p.setPen (QtGui.QPen(QtGui.QColor(0,0,0), 1))
         draw(p, self.tree, 10, 10)
         p.end()
