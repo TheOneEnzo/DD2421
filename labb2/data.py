@@ -1,7 +1,6 @@
 import numpy as np
 import random
  
-np.random.seed(100)
 # Generate class A (two clusters)
 classA = np.concatenate(
     (
